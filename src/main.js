@@ -12,8 +12,14 @@ Vue.config.productionTip = false
 Vue.use(Vuetify);
 
 Vue.use(DaySpanVuetify, {
+  data: {
+    // data or computed to override
+  },
+  computed: {
+    // data or computed to override
+  },
   methods: {
-    getDefaultEventColor: () => '#1976d2'
+    getDefaultEventColor: () => '#29b475'
   }
 });
 
